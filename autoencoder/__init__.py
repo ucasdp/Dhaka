@@ -78,7 +78,7 @@ def main(input_datafile='oligo_malignant.txt',latent_dim=3,
         raise TypeError('Batch size must be an integer')
     elif batch_size==0:
         raise ValueError('Batch size should not be zero')
-    elif batch_size>size[0]:
+    elif batch_size>orig_size[0]:
         raise ValueError('Batch size should not be larger than the total number of cells')    
     
     # n_genes
