@@ -133,10 +133,10 @@ def main(input_datafile='oligo_malignant.txt',latent_dim=3,
     
     if relative_expression:
         y=np.mean(x_t,axis=1)
-    if gene_selection:
-        x_t=x_t-np.tile(y,(n_genes,1)).transpose()
-    else:
-        x_t=x_t-np.tile(y,(orig_size[1],1)).transpose()
+        if gene_selection:
+            x_t=x_t-np.tile(y,(n_genes,1)).transpose()
+        else:
+            x_t=x_t-np.tile(y,(orig_size[1],1)).transpose()
 
         
     x_train=x_t   
