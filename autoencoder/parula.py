@@ -1,14 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Aug 28 14:56:46 2018
 
-@author: Sabrina
-"""
-
-# NOTE:
-# This is a copy of "parula" from MATLAB. We don't claim any rights to this
-# file, but The Mathworks does. Consult them and/or a lawyer if you want to
-# use it.
 
 from matplotlib.colors import LinearSegmentedColormap
 
