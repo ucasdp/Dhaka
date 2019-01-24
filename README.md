@@ -48,6 +48,9 @@ to_plot: should be 0 or 1. for 1 plots will be saved as .png with output_datafil
          
 relative_expression: should be 0 or 1. refer publication for formulation
 
+
+activation: should be either 'sigmoid' or 'relu'. Default: 'sigmoid'
+
 Outputs
 
 encoded features will be saved in output_datafile.txt : Rows=cells, Cols=Latent dims
